@@ -1,0 +1,6 @@
+{
+  "singleQuote": true,
+  "endOfLine": "auto",
+  "printWidth": 500,
+  "tabWidth": 2
+}
