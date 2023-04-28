@@ -12,7 +12,8 @@
     }
   },
   "env": {
-    "node": true
+    "node": true,
+    "browser": true
   },
   "extends": ["airbnb", "eslint:recommended", "plugin:prettier/recommended"],
   "rules": {
@@ -21,6 +22,12 @@
     "import/no-default-export": "warn",
     "import/no-unresolved": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "react/button-has-type": "off",
+    "react/self-closing-comp": "off",
+    "react/destructuring-assignment": "warn",
+    "no-debugger": "off",
+    "jsx-a11y/label-has-associated-control": "warn",
     "react/prop-types": 0,
     "import/extensions": 0
   },

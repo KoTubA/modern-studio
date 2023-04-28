@@ -2,12 +2,15 @@ import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'assets/styles/GlobalStyles';
 import { theme } from 'assets/styles/theme';
+import { Navigation } from 'components/Navigation/Navigation';
+// import 'assets/styles/normalize.css';
 
-export function MainTemplate({ children }) {
-  return (
-    <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
-    </>
-  );
-}
+export const MainTemplate = ({ children }) => (
+  <>
+    <GlobalStyle />
+    <ThemeProvider theme={theme}>
+      <Navigation />
+      {children}
+    </ThemeProvider>
+  </>
+);
