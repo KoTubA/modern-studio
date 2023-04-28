@@ -10,13 +10,13 @@ const H2 = styled.h2`
   font-weight: 300;
 `;
 
-function IndexPage() {
+const IndexPage = () => {
   return (
     <main>
       <H1>Modern studio</H1>
       <H2>Modern studio</H2>
     </main>
   );
-}
+};
 
 export default IndexPage;
