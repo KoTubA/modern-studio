@@ -12,6 +12,7 @@ const OuterWrapper = styled.div`
   align-items: center;
   width: 100%;
   padding: 20px;
+  position: absolute;
 `;
 
 const StyledBurger = styled.button`
@@ -25,10 +26,6 @@ const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-
-  &:focus {
-    outline: none;
-  }
 
   div {
     width: 2rem;
