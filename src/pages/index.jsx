@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { AdvantagesSection, ContactForm, ContentWrapper, Hero, HeroHeading, HeroParagraph, ReviewsSection, ServicesSection, ShowcaseGallery, ShowcaseImage, ShowcaseSection, StyledButton, StyledLinkButton, StyledList, TeamImage, TeamSection, WelcomeSection, WelcomeSectionContent, WelcomeSectionImage } from '../assets/styles/pages/Homepage.styles';
+import { AdvantagesSection, ContactForm, ContentWrapper, Hero, HeroHeading, HeroParagraph, ReviewsSection, ServicesSection, ShowcaseGallery, ShowcaseImage, ShowcaseSection, StyledButton, StyledLinkButton, StyledList, StyledReview, TeamImage, TeamSection, WelcomeSection, WelcomeSectionContent, WelcomeSectionImage } from '../assets/styles/pages/Homepage.styles';
 import { HighlightedHeading } from '../components/HighlightedHeading/HighlightedHeading';
 
 const Homepage = ({ data }) => (
@@ -49,9 +49,11 @@ const Homepage = ({ data }) => (
         </ShowcaseGallery>
       </ShowcaseSection>
       <ServicesSection>
-        <HighlightedHeading>Twój komfort ponad wszystko</HighlightedHeading>
+        <div>
+          <HighlightedHeading>Twój komfort ponad wszystko</HighlightedHeading>
+          <StyledLinkButton>Sprawdź pełen zakres naszych usług</StyledLinkButton>
+        </div>
         <p>To, co dla innych biur nieruchomości wykracza poza zakres usług, dla nas jest standardem. Wyróżnia nas bezkompromisowa troska o interes klienta.</p>
-        <StyledLinkButton>Sprawdź pełen zakres naszych usług</StyledLinkButton>
         <StyledList>
           <li>
             <h3>Pośrednictwo</h3>
@@ -72,23 +74,28 @@ const Homepage = ({ data }) => (
         </StyledList>
       </ServicesSection>
       <TeamSection>
-        <HighlightedHeading>Poznaj nasz zespół</HighlightedHeading>
-        <p>Dzięki doskonałej współpracy i przyjacielskiej atmosferze udało nam się stworzyć zespół dokosnały.</p>
-        <StyledLinkButton>Sprawdź, kim jesteśmy</StyledLinkButton>
+        <div>
+          <HighlightedHeading>Poznaj nasz zespół</HighlightedHeading>
+          <p>Dzięki doskonałej współpracy i przyjacielskiej atmosferze udało nam się stworzyć zespół dokosnały.</p>
+          <StyledLinkButton>Sprawdź, kim jesteśmy</StyledLinkButton>
+        </div>
         <TeamImage imageSource={data.team1.publicURL} alt="" />
+        <TeamImage imageSource={data.team2.publicURL} alt="" />
       </TeamSection>
       <ReviewsSection>
-        <HighlightedHeading>Co mówią o nas nasi klienci?</HighlightedHeading>
-        <p>Bezkompromisowo wspieramy naszych klientów a ich satysfakcja jest dla nas najważniejszym celem.</p>
         <div>
-          <div>
+          <HighlightedHeading>Co mówią o nas nasi klienci?</HighlightedHeading>
+          <p>Bezkompromisowo wspieramy naszych klientów a ich satysfakcja jest dla nas najważniejszym celem.</p>
+        </div>
+        <div>
+          <StyledReview>
             <p>Udało się znaleźć kupca na nasze mieszkanie w jedne dzień! Cały proces był przeprowadzony bardzo sprawnie, profesjonalnie i dla nas jako klientów bezboleśnie. Ania ma prawdziwy dar tłumaczenia zawiłości i dopinania detali.</p>
             <p>Katarzyna</p>
-          </div>
-          <div>
+          </StyledReview>
+          <StyledReview>
             <p>Współpraca na najwyższym poziomie. Jeśli zależy Wam na szybkiej, bezproblemowej sprzedaży czy zakupie mieszkania/ domu to nie ma lepszego miejsca.</p>
             <p>Kamila</p>
-          </div>
+          </StyledReview>
         </div>
       </ReviewsSection>
       <ContactForm action="#">
