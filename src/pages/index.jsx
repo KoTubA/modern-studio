@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { AdvantagesSection, ContactForm, ContentWrapper, Hero, HeroHeading, HeroParagraph, HighlightedHeading, ReviewsSection, ServicesSection, ShowcaseGallery, ShowcaseImage, ShowcaseSection, StyledButton, StyledLinkButton, StyledList, TeamImage, TeamSection, WelcomeSection, WelcomeSectionContent, WelcomeSectionImage } from '../assets/styles/pages/Homepage.styles';
+import { AdvantagesSection, ContactForm, ContentWrapper, Hero, HeroHeading, HeroParagraph, ReviewsSection, ServicesSection, ShowcaseGallery, ShowcaseImage, ShowcaseSection, StyledButton, StyledLinkButton, StyledList, TeamImage, TeamSection, WelcomeSection, WelcomeSectionContent, WelcomeSectionImage } from '../assets/styles/pages/Homepage.styles';
+import { HighlightedHeading } from '../components/HighlightedHeading/HighlightedHeading';
 
 const Homepage = ({ data }) => (
   <>

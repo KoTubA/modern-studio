@@ -41,29 +41,26 @@ export const WelcomeSection = styled(StyledSection)`
 `;
 
 export const WelcomeSectionContent = styled.div`
-  background-color: ${({ theme }) => theme.color.black};
+  background-color: ${({ theme }) => theme.color.dark};
   padding: 30px 20px;
   position: relative;
-
   h2 {
     margin: 0 0 20px 0;
     font-size: 2.5rem;
     font-weight: 400;
     color: white;
   }
-
   p {
     color: white;
     font-size: ${({ theme }) => theme.font.size.paragraph};
   }
-
   &::after {
     position: absolute;
     width: 70px;
     height: 70px;
     content: '';
     clip-path: polygon(0 16%, 0 0, 100% 0, 100% 100%, 84% 100%, 84% 16%);
-    background-color: ${({ theme }) => theme.color.black};
+    background-color: ${({ theme }) => theme.color.dark};
     right: -20px;
     top: -20px;
   }
@@ -77,7 +74,6 @@ export const WelcomeSectionImage = styled.div`
   background-image: url('${({ imageSource }) => imageSource}');
   background-repeat: no-repeat;
   background-size: cover;
-
   &::after {
     position: absolute;
     width: 70px;
@@ -93,29 +89,11 @@ export const WelcomeSectionImage = styled.div`
 export const AdvantagesSection = styled(StyledSection)``;
 export const ServicesSection = styled(StyledSection)``;
 
-export const HighlightedHeading = styled.h2`
-  font-size: ${({ theme }) => theme.font.size.headingSmall};
-  position: relative;
-
-  &::before {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: calc(${({ theme }) => theme.font.size.headingSmall} * 1.5);
-    top: calc(-${({ theme }) => theme.font.size.headingSmall} / 6);
-    left: -50%;
-    background-color: ${({ theme }) => theme.color.beige};
-  }
-`;
-
 export const StyledList = styled.ul`
   padding: 0;
   list-style: none;
-
   li {
     margin: 30px 0;
-
     h3 {
       font-family: ${({ theme }) => theme.font.family.montserrat};
       font-weight: 700;
@@ -125,7 +103,7 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledButton = styled.button`
-  border: 1px solid ${({ theme }) => theme.color.black};
+  border: 1px solid ${({ theme }) => theme.color.dark};
   background-color: transparent;
   font-size: ${({ theme }) => theme.font.size.button};
   font-family: ${({ theme }) => theme.font.family.montserrat};
@@ -139,10 +117,9 @@ export const StyledButton = styled.button`
 export const StyledLinkButton = styled(Link)`
   font-family: ${({ theme }) => theme.font.family.montserrat};
   font-size: ${({ theme }) => theme.font.size.paragraph};
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.dark};
   text-decoration: underline;
   position: relative;
-
   &::after {
     position: absolute;
     content: '';
@@ -187,17 +164,7 @@ export const TeamImage = styled.div`
   background-image: url('${({ imageSource }) => imageSource}');
   background-repeat: no-repeat;
   background-size: cover;
-
-  &::after {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    content: '';
-    clip-path: polygon(84% 0, 84% 84%, 0 84%, 0 100%, 100% 100%, 100% 0%);
-    background-color: ${({ theme }) => theme.color.black};
-    right: -20px;
-    bottom: -20px;
-  }
+  ${({ theme }) => theme.effect.corner({ position: 'bottomRight' })};
 `;
 
 export const ReviewsSection = styled(StyledSection)``;
