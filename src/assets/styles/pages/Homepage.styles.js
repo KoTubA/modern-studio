@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import arrowIcon from 'assets/styles/arrow.svg';
+import arrowIcon from 'assets/icons/arrow.svg';
 
 export const StyledList = styled.ul`
   padding: 0;
