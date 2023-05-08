@@ -5,8 +5,10 @@ import arrowIcon from 'assets/icons/arrow.svg';
 export const StyledList = styled.ul`
   padding: 0;
   list-style: none;
+
   li {
     margin: 30px 0;
+
     h3 {
       font-family: ${({ theme }) => theme.font.family.montserrat};
       font-weight: 700;
@@ -41,6 +43,7 @@ export const StyledLinkButton = styled(Link)`
   position: relative;
   display: inline-block;
   margin: 5px 0 10px;
+
   &::after {
     position: absolute;
     content: '';
@@ -87,16 +90,6 @@ export const HeroParagraph = styled.p`
   text-shadow: ${({ theme }) => theme.font.shadow};
 `;
 
-export const ContentWrapper = styled.div`
-  padding: 0 20px;
-
-  ${({ theme }) => theme.mq.desktop} {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 100px;
-  }
-`;
-
 const StyledSection = styled.section`
   margin: 100px 0;
 
@@ -125,16 +118,19 @@ export const WelcomeSectionContent = styled.div`
   background-color: ${({ theme }) => theme.color.dark};
   padding: 30px 20px;
   position: relative;
+
   h2 {
     margin: 0 0 20px 0;
     font-size: 2.5rem;
     font-weight: 400;
     color: white;
   }
+
   p {
     color: white;
     font-size: ${({ theme }) => theme.font.size.paragraph};
   }
+
   &::after {
     position: absolute;
     width: 70px;
@@ -173,6 +169,7 @@ export const WelcomeSectionImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 80%;
+
   &::after {
     position: absolute;
     width: 70px;
@@ -206,6 +203,7 @@ export const ShowcaseSection = styled(StyledSection)`
     text-align: center;
     margin: 30px 0 10px;
   }
+
   div:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -217,6 +215,7 @@ export const ShowcaseSection = styled(StyledSection)`
     h2 {
       margin: 0 0 30px;
     }
+
     div:nth-child(2) {
       display: flex;
       flex-direction: row;
@@ -251,15 +250,19 @@ export const ShowcaseGallery = styled.div`
         pseudoelement: 'before',
         color: theme.color.beige,
       })};
+
     img:nth-child(1) {
       grid-row: 1 / 2;
     }
+
     img:nth-child(2) {
       grid-row: 1 / 3;
     }
+
     img:nth-child(3) {
       grid-row: 2 / 4;
     }
+
     img:nth-child(4) {
       grid-row: 3 / 4;
     }
@@ -306,6 +309,7 @@ export const TeamImage = styled.div`
   background-image: url('${({ imageSource }) => imageSource}');
   background-repeat: no-repeat;
   background-size: cover;
+
   ${({ theme }) => theme.effect.corner({ position: 'bottomRight' })};
 `;
 
@@ -333,6 +337,7 @@ export const TeamSection = styled(StyledSection)`
       grid-row: 2 / 3;
       width: 50%;
       justify-self: end;
+
       ${({ theme }) => theme.effect.corner({ position: 'bottomLeft', size: '100px', distance: '30px' })};
     }
 
@@ -369,6 +374,7 @@ export const ReviewsSection = styled(StyledSection)`
         margin: 0;
       }
     }
+
     div:last-child {
       grid-row: 1 / 1;
       grid-column: 1 / 2;
@@ -391,6 +397,10 @@ export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+
+  button {
+    margin: 10px 0;
+  }
 
   label {
     font-family: ${({ theme }) => theme.font.family.montserrat};
