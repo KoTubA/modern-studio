@@ -38,17 +38,17 @@ export const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link onClick={toggleNavigation} to="/">
+              <Link onClick={toggleNavigation} to="/zespol">
                 Zespół
               </Link>
             </li>
             <li>
-              <Link onClick={toggleNavigation} to="/">
+              <Link onClick={toggleNavigation} to="/uslugi">
                 Usługi
               </Link>
             </li>
             <li>
-              <Link onClick={toggleNavigation} to="/">
+              <Link onClick={toggleNavigation} to="/kontakt">
                 Kontakt
               </Link>
             </li>
