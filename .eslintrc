@@ -29,7 +29,8 @@
     "no-debugger": "off",
     "jsx-a11y/label-has-associated-control": "warn",
     "react/prop-types": 0,
-    "import/extensions": 0
+    "import/extensions": 0,
+    "no-unused-vars": "warn"
   },
   "overrides": [
     {
