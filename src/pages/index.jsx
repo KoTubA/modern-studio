@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { HighlightedHeading } from 'components/HighlightedHeading/HighlightedHeading';
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper.styles';
-import { AdvantagesSection, ContactForm, Hero, HeroHeading, HeroParagraph, ReviewsSection, ServicesSection, ShowcaseGallery, ShowcaseImage, ShowcaseSection, StyledButton, StyledLinkButton, StyledReview, TeamImage, TeamSection, WelcomeSection, WelcomeSectionContent, WelcomeSectionImage } from 'assets/styles/pages/homepage.styles';
+import { AdvantagesSection, ContactForm, Hero, HeroHeading, HeroParagraph, ReviewsSection, ServicesSection, ShowcaseCorner, ShowcaseGallery, ShowcaseImage, ShowcaseSection, StyledButton, StyledLinkButton, StyledReview, TeamImage, TeamSection, WelcomeSection, WelcomeSectionContent, WelcomeSectionImage } from 'assets/styles/pages/homepage.styles';
 import { StyledList } from 'components/StyledList/StyledList.styles';
 
 const Homepage = ({ data }) => (
@@ -13,12 +13,12 @@ const Homepage = ({ data }) => (
     </Hero>
     <ContentWrapper>
       <WelcomeSection>
-        <WelcomeSectionContent>
+        <WelcomeSectionContent position="topRight" size="100px" distance="30px" offset="600">
           <h2>Obsługę nieruchomości wymyśliliśmy na nowo</h2>
           <p>Modern Studio to nowoczesne biuro nieruchomości z profesjonalnym i innowacyjnym podejściem do tematu nieruchomości i inwestycji.</p>
           <p>Klienci wybierają nas, ponieważ zakres naszych usług wykracza poza to, co jest w stanie zaoferować konkurencja.</p>
         </WelcomeSectionContent>
-        <WelcomeSectionImage imageSource={data.welcome.publicURL} />
+        <WelcomeSectionImage position="bottomLeft" color="beige" size="100px" distance="30px" imageSource={data.welcome.publicURL} />
       </WelcomeSection>
       <AdvantagesSection>
         <HighlightedHeading width="50" isRight>
@@ -50,6 +50,8 @@ const Homepage = ({ data }) => (
           <ShowcaseImage isBig src={data.grid2.publicURL} alt="#" />
           <ShowcaseImage src={data.grid3.publicURL} alt="#" />
           <ShowcaseImage isBig src={data.grid4.publicURL} alt="#" />
+          <ShowcaseCorner position="bottomLeft" size="100px" distance="30px" color="beige" />
+          <ShowcaseCorner position="topRight" size="100px" distance="30px" color="dark" />
         </ShowcaseGallery>
       </ShowcaseSection>
       <ServicesSection>
@@ -85,8 +87,8 @@ const Homepage = ({ data }) => (
           <p>Dzięki doskonałej współpracy i przyjacielskiej atmosferze udało nam się stworzyć zespół dokosnały.</p>
           <StyledLinkButton>Sprawdź, kim jesteśmy</StyledLinkButton>
         </div>
-        <TeamImage imageSource={data.team1.publicURL} alt="" />
-        <TeamImage imageSource={data.team2.publicURL} alt="" />
+        <TeamImage offset="700" position="bottomLeft" size="70px" distance="20px" color="beige" imageSource={data.team1.publicURL} alt="" />
+        <TeamImage position="topRight" size="100px" distance="30px" color="dark" imageSource={data.team2.publicURL} alt="" />
       </TeamSection>
       <ReviewsSection>
         <div>
