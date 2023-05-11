@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper.styles';
+import { ContactDetails } from 'components/ContactDetails/ContactDetails';
 
 export const Address = styled.p`
   font-weight: 700;
@@ -35,7 +36,7 @@ export const OfferDetailsList = styled.ul`
   }
 
   ${({ theme }) => theme.mq.desktop} {
-    margin: 0;
+    margin: 50px 0;
 
     li {
       margin: 30px 0;
@@ -44,25 +45,6 @@ export const OfferDetailsList = styled.ul`
     div {
       display: flex;
     }
-  }
-`;
-
-export const ContactDetails = styled.div`
-  display: flex;
-  margin-bottom: 50px;
-
-  img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  p:first-child {
-    font-weight: bold;
   }
 `;
 
@@ -86,7 +68,11 @@ export const OfferDescription = styled.p`
   }
 `;
 
-export const OfferTitle = styled.div``;
+export const OfferTitle = styled.div`
+  ${({ theme }) => theme.mq.desktop} {
+    margin-bottom: 30px;
+  }
+`;
 
 export const StyledContentWrapper = styled(ContentWrapper)`
   display: grid;
