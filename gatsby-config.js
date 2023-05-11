@@ -32,6 +32,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-styled-components',
+    'gatsby-transformer-remark',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

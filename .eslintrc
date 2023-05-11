@@ -34,7 +34,7 @@
   },
   "overrides": [
     {
-      "files": ["./src/pages/*.jsx"],
+      "files": ["./src/pages/*.jsx", "./src/templates/*.jsx"],
       "rules": {
         "no-unused-expressions": "off",
         "import/no-default-export": "off"
