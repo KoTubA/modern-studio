@@ -20,7 +20,7 @@ const Realizacje = ({ data }) => (
       <PortfolioItem isOdd>
         <div>
           <HighlightedHeading width="70">ul. Sielska</HighlightedHeading>
-          <p>Usługa obejmowała zarówno pośrednictwo w wynajmie nieruchomości, jak również pełną aranżację wnętrza i przestrzeni mieszkania. Nieruchomość została zarezerwowana na 1 prezentacji.</p>
+          <p>Usługa obejmowała zarówno pośrednictwo w wynajmie nieruchomości, jak również pełną aranżację wnętrza i przestrzeni mieszkania. Nieruchomość została zarezerwowana na pierwszej prezentacji.</p>
         </div>
         <img src={data.sielska1.publicURL} alt="" />
       </PortfolioItem>

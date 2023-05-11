@@ -17,7 +17,7 @@ const Homepage = ({ data }) => (
     </Hero>
     <WelcomeSection>
       <WelcomeSectionContent position="topRight" size="100px" distance="30px" offset="600">
-        <h2>Obsługę nieruchomości wymyśliliśmy na nowo</h2>
+        <h2>Obsługę nieruchomości wymyśliłyśmy na nowo</h2>
         <p>Modern Studio to nowoczesne biuro nieruchomości z profesjonalnym i innowacyjnym podejściem do tematu nieruchomości i inwestycji.</p>
         <p>Klienci wybierają nas, ponieważ zakres naszych usług wykracza poza to, co jest w stanie zaoferować konkurencja.</p>
       </WelcomeSectionContent>
@@ -38,7 +38,7 @@ const Homepage = ({ data }) => (
         </li>
         <li>
           <h3>Zgrany zespół</h3>
-          <p>Doskonale rozumiemy Twoje potrzeby. Jesteśmy zespołem o zróżnicowanych kompetencjach, dzięki którym świetnie się uzupełniamy</p>
+          <p>Doskonale rozumiemy Twoje potrzeby. Jesteśmy zespołem o zróżnicowanych kompetencjach, dzięki którym świetnie się uzupełniamy.</p>
         </li>
       </StyledList>
     </AdvantagesSection>

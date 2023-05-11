@@ -11,11 +11,7 @@ import {
 } from 'assets/styles/pages/oferty.styles';
 import { Thumbnail } from 'components/Thumbnail/Thumbnail';
 
-const Oferty = ({
-  data: {
-    oferty: { nodes: oferty },
-  },
-}) => (
+const Oferty = ({ data = null }) => (
   <ContentWrapper isSubpage>
     <IntroSection>
       <HighlightedHeading>Nasza oferta</HighlightedHeading>
@@ -26,9 +22,10 @@ const Oferty = ({
     {/*  <li>Dom</li> */}
     {/*  <li>Działka</li> */}
     {/* </FiltersList> */}
-    {oferty.length ? (
+    {/* {oferty.length ? ( */}
+    {data ? (
       <Gallery>
-        {oferty.map((oferta) => (
+        {data.oferty.nodes.map((oferta) => (
           <Thumbnail key={oferta.id} imageSource={oferta.galeria[0].file.url} address={oferta.adres} title={oferta.tytul} />
         ))}
       </Gallery>
