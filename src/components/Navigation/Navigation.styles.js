@@ -25,6 +25,7 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
+
   div {
     width: 2rem;
     height: 0.15rem;
@@ -70,9 +71,14 @@ export const StyledLogo = styled(({ isMobile, isSmall, ...props }) => <Logo {...
 `;
 
 export const StyledSocialIcon = styled(StyledIcon)`
+  display: inline-block;
   margin: 0 20px;
   width: 50px;
   height: 50px;
+
+  svg {
+    width: 100%;
+  }
 
   ${({ theme }) => theme.mq.desktop} {
     width: 25px;
@@ -86,6 +92,7 @@ export const StyledNavigation = styled.nav`
     list-style: none;
     padding: 0;
     text-align: center;
+
     li {
       a {
         display: inline-block;
