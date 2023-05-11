@@ -28,11 +28,14 @@
     "gatsby-plugin-styled-components": "^6.9.0",
     "gatsby-source-contentful": "^8.9.1",
     "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-transformer-remark": "^6.9.0",
     "gatsby-transformer-sharp": "^5.9.0",
     "gsap": "^3.11.5",
     "lodash.throttle": "^4.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "slugify": "^1.6.6",
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
