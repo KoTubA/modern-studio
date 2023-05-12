@@ -1,49 +1,65 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# Hello Roman - Projekt od A do Z
 
-## 🚀 Quick start
+## Project prupose
 
-1.  **Create a Gatsby site.**
+**Moder Studio** is a project created based on the `"Project from A to Z"` course from the [hello roman](https://www.youtube.com/channel/UCq8XmOMtrUCb8FcFHQEd8_g) channel, resulting from a collaboration with [Modern Studio](https://www.msnieruchomosci.pl/), a company that stands out for its innovative approach to real estate and investment topics.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+<img src="./design/desktop-design-homepage.png" alt="desktop-design-homepage" width="100%"/>
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+The repository is divided into separate branches based on the **22** available lessons, which will show you how to create a project for a real company from start to finish. The course includes:
 
-2.  **Start developing.**
+- client consultation
+- creating wireframes and designing the website in Figma
+- writing copy and selecting images for the site
+- implementing the project using the Gatsby framework with Contentful
+- automatic deployment of the application (in my case, using Github/Netlify/Contentful)
 
-    Navigate into your new site’s directory and start it up.
+The `main` branch contains additional features not covered in the course, while the last branch related to the course is called `refactor`.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## How to run?
 
-3.  **Open the code and start customizing!**
+**1. Clone this repository:**
 
-    Your site is now running at http://localhost:8000!
+```
+git clone https://github.com/KoTubA/modern-studio.git
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+or:
 
-4.  **Learn more**
+```
+git clone git@github.com:KoTubA/modern-studio.git
+```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+**2. Install npm packages:**
 
-## 🚀 Quick start (Netlify)
+```sql
+npm install
+```
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+**3. Start developing.**
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Navigate into site’s directory and start it up.
+
+```shell
+cd modern-studio/
+npm run develop
+```
+
+**4. Open the code and start customizing!**
+
+The site is now running at http://localhost:8000
+
+Edit `src` folder to see your site update in real-time!
+
+**5. Learn more**
+
+- [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## Live demo
+
+Link to demo: https://moder-studio.netlify.app/
